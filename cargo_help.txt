@@ -1,0 +1,26 @@
+$ cargo new hello_cargo --bin
+
+$ cargo build
+
+	(Cargo.lock to keep track of dependencies in your application)
+
+$ cargo run 
+	(Cargo will put it in the target/debug directory)
+
+cargo build --release
+	(create an executable in target/release instead of target/debug)
+
+In fact, you can get started with virtually all Rust projects you want to work on with the following commands:
+	$ git clone someurl.com/someproject
+	$ cd someproject
+	$ cargo build
+
+$ cargo update
+	When you do want to update a crate
+
+$ cargo doc --open 
+	command that will build documentation
+--------------------------------------------------------------------------------------
+
+	:: 	|	static method
+	{} 	|	is a placeholder that holds a value in place
