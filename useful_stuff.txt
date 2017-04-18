@@ -31,7 +31,26 @@ $ cargo doc --open
 
 - Note that all number literals except the byte literal allow a type suffix, such as 57u8, and _ as a visual separator, such as 1_000.
 
+- Statements are instructions that perform some action and do not return a value. 
+	fn main() {
+	    let y = 6; // <-- Statement, so is the main itself
+	}			// In C, you can write x = y = 6 and have both x and y have the value 6; that is not the case in Rust.
 
+- Expressions evaluate to a resulting value. 
+	fn main() {
+	    let x = 5;
+
+	    let y = {				// <-- Example Expression
+		let x = 3;
+		x + 1				// !!! HAS NO SEMICOLON, with semicolon it would be a statement without return
+	    };
+
+	    println!("The value of y is: {}", y);
+	}
+
+- We create slices with a rang of [starting_index..ending_index], but the slice data structure actually stores the starting position and the length of the 	slice.
+	let s = String::from("hello world");
+	let hello = &s[0..5];
 
 --------------------------------------------------------------------------------------
 
@@ -67,3 +86,12 @@ fn main() {
 
     
 }
+
+-------------------------------------------------------------------------------------
+
+Rules Ownership
+        1. Each value in Rust has a variable that’s called its owner.
+        2. There can only be one owner at a time.
+        3. When the owner goes out of scope, the value will be dropped.
+
+
