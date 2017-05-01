@@ -50,8 +50,21 @@ $ cargo doc --open
 
 - We create slices with a rang of [starting_index..ending_index], but the slice data structure actually stores the starting position and the length of the 	slice.
 	let s = String::from("hello world");
-	let hello = &s[0..5];
+	let hello = &s[0..5]; // [..5] or [3..] or [..]
 
+- Lifetimes ensure that the data a struct references is valid for as long as the struct is.
+
+- Putting the specifier :? inside the {} tells println! we want to use an output format called Debug
+
+- Having a method that takes ownership of the instance by having just self as the first parameter is rarer; this is usually used when the method transforms self into something else and we want to prevent the caller from using the original instance after the transformation.
+
+- Rust doesn’t have the null feature that many other languages have.
+
+- Match: Patterns can be made up of literal values, variable names, wildcards, and many other things
+
+- By default, everything is set as private (including modules). You can use the pub keyword to make a module public.
+
+- The use keyword allows you to bring modules, or the definitions inside modules, into scope so that it’s easier to refer to them.
 --------------------------------------------------------------------------------------
 
 const Y: u32 = 12;
