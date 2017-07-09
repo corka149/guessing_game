@@ -65,6 +65,8 @@ $ cargo doc --open
 - By default, everything is set as private (including modules). You can use the pub keyword to make a module public.
 
 - The use keyword allows you to bring modules, or the definitions inside modules, into scope so that it’s easier to refer to them.
+
+- Note: Traits are similar to a feature often called 'interfaces' in other languages, though with some differences.
 --------------------------------------------------------------------------------------
 
 const Y: u32 = 12;

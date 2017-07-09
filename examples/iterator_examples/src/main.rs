@@ -10,7 +10,7 @@ fn main() {
         println!("i =  {}", i);
     }
     
-    println!(".fold");
+   println!(".fold");
     let sum = (0..10).fold(0, |acc, x| acc + x);
     println!("sum = {}", sum);
 }

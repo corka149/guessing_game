@@ -1,0 +1,6 @@
+[package]
+name = "small_function"
+version = "0.1.0"
+authors = ["corka149 <corka149@mailbox.org>"]
+
+[dependencies]
