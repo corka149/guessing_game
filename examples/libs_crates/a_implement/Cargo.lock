@@ -1,0 +1,11 @@
+[root]
+name = "a_implement"
+version = "0.1.0"
+dependencies = [
+ "aggregator 0.1.0",
+]
+
+[[package]]
+name = "aggregator"
+version = "0.1.0"
+
